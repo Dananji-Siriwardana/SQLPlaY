@@ -2,7 +2,7 @@
 One item originally priced at $120 will be discounted by 25%.
 Write a query to return both the discount amount and the resulting sale price.
 Output:
-A single row with two columns, discount_amount and sale_price, in that order
+A single row with two columns, discount_amount and sale_price, in that order*/
 
 select (120 * 0.25) as discount_amount,120 - (120*0.25) as sale_price.
 
@@ -10,8 +10,7 @@ select (120 * 0.25) as discount_amount,120 - (120*0.25) as sale_price.
 One item in the line sells for $149.99 and carries a production cost of $89.50 per unit.
 Write a query to return the gross profit per unit.*/
 
-/*select 149.99 - 89.50 as gross_profit */
-
+select 149.99 - 89.50 as gross_profit 
 
 /*Brightlane's logistics team is preparing an itemized cost breakdown for a single shipment, ahead of invoicing the customer. 
 The shipment carries three charges: a fuel surcharge of $18.50, a handling fee of $7.25, and an insurance charge of $4.00.
