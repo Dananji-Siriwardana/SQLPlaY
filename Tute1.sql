@@ -7,8 +7,8 @@ A single row with two columns, discount_amount and sale_price, in that order*/
 select (120 * 0.25) as discount_amount,120 - (120*0.25) as sale_price.
 
 /* 2) Brightlane's merchandising team is evaluating margin on a new product line ahead of the spring catalog launch. 
-One item in the line sells for $149.99 and carries a production cost of $89.50 per unit.
-Write a query to return the gross profit per unit.*/
+One item in the line sells for $149.99 and carries a production cost of $89.50 per unit.*/
+Write a query to return the gross profit per unit.
 
 select 149.99 - 89.50 as gross_profit 
 
@@ -21,4 +21,12 @@ A single row with four columns, in this order: fuel_surcharge, handling_fee, ins
 
 select 18.50 as fuel_surcharge,7.25 as handling_fee,4 as insurance, (18.50+7.25+4) as total_cost
 
+/*Helix Systems' accounts payable team is calculating the net amount due on a vendor invoice. 
+The invoice is for $3,600, an early-payment rebate of $400 is applied first, and a 5% processing fee is then 
+ on the remaining balance.Write a query to return the final net payment amount.
+ 
+Output:
+A single row with one column, net_payment.*/
+
+select ((3200*0.05)+3200) as net_payment
 
